@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-15T05:30:02.229Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.259.400 QQBrowser/12.6.5709.400" etag="KsMzhlnYTEHuFf2PkB2U" version="24.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-15T06:32:28.601Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.259.400 QQBrowser/12.6.5709.400" etag="zmS50fQtubVtTGmOoTPG" version="24.6.5" type="github">
   <diagram name="第 1 页" id="-xguryHVdIeM40GGmxYT">
-    <mxGraphModel dx="4494" dy="2956" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5125" dy="3353" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -446,40 +446,49 @@
           <mxGeometry x="-435" y="970" width="590" height="580" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-191" value="v_buildgroupinfo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
-          <mxGeometry x="75" y="360" width="120" height="60" as="geometry" />
+          <mxGeometry x="5" y="370" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-192" value="ProjectID&lt;div&gt;项目编号&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
-          <mxGeometry x="375" y="220" width="120" height="60" as="geometry" />
+          <mxGeometry x="305" y="230" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-193" value="BuildID&lt;div&gt;幢编号&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
-          <mxGeometry x="375" y="290" width="120" height="60" as="geometry" />
+          <mxGeometry x="305" y="300" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-194" value="BuildName&lt;div&gt;幢名&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
-          <mxGeometry x="375" y="360" width="120" height="60" as="geometry" />
+          <mxGeometry x="305" y="370" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-195" value="HouseCount&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
-          <mxGeometry x="375" y="430" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-195" value="HouseID&lt;div&gt;房屋id&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
+          <mxGeometry x="305" y="440" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-196" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; 1. 涉及的表格：这个查询涉及两个表格：&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; `data_houseinfo`：包含房屋的信息。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; `data_buildinfo`：包含建筑物的信息。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 2. 连接：使用 `BuildID` 字段将 `data_houseinfo` 和 `data_buildinfo` 表格连接起来。这样可以将每个房屋与其对应的建筑物关联起来。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 3. ：&lt;span style=&quot;background-color: initial;&quot;&gt;`count(data_houseinfo.HouseID) AS HouseCount`：统计在 `data_houseinfo` 表格中，与 `data_buildinfo` 中的每个 `BuildID` 相匹配的房屋数。这个统计结果用 `HouseCount` 作为别名。&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
           <mxGeometry x="60" y="80" width="450" height="130" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-198" value="Data_BuildInfo&lt;div&gt;幢扩展信息表，&lt;/div&gt;&lt;div&gt;幢基础属性信息参照&lt;/div&gt;&lt;div&gt;楼盘管理基础库&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
-          <mxGeometry x="225" y="285" width="120" height="60" as="geometry" />
+          <mxGeometry x="155" y="295" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-199" value="Data_HouseInfo&lt;div&gt;房屋扩展信息表，&lt;/div&gt;&lt;div&gt;房屋基础属性信息&lt;/div&gt;&lt;div&gt;参照楼盘管理基础库&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
-          <mxGeometry x="225" y="430" width="120" height="60" as="geometry" />
+          <mxGeometry x="155" y="440" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-200" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
-          <mxGeometry x="345" y="240" width="20" height="150" as="geometry" />
+          <mxGeometry x="275" y="250" width="20" height="150" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-202" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="99tiGJLgSlBT4EcU3DEi-204" source="99tiGJLgSlBT4EcU3DEi-199" target="99tiGJLgSlBT4EcU3DEi-195">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="485" y="480" as="sourcePoint" />
-            <mxPoint x="535" y="430" as="targetPoint" />
+            <mxPoint x="415" y="490" as="sourcePoint" />
+            <mxPoint x="465" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-203" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
-          <mxGeometry x="195" y="310" width="20" height="160" as="geometry" />
+          <mxGeometry x="125" y="320" width="20" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-294" value="HouseCount" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
+          <mxGeometry x="455" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-295" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="99tiGJLgSlBT4EcU3DEi-204" source="99tiGJLgSlBT4EcU3DEi-195" target="99tiGJLgSlBT4EcU3DEi-294">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="265" y="680" as="sourcePoint" />
+            <mxPoint x="315" y="630" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-225" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
           <mxGeometry x="200" y="960" width="600" height="750" as="geometry" />
@@ -543,6 +552,231 @@
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-224" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-225">
           <mxGeometry x="260" y="244" width="20" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-247" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="926" y="960" width="630" height="940" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-226" value="v_buildprogress" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="160" y="339.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-227" value="Data_ProjectInfo&lt;div&gt;项目基本信息表&lt;/div&gt;&lt;div&gt;（分期）&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="305" y="95" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-228" value="ProjectID&lt;div&gt;项目编号&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="450" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-229" value="ProjectName&lt;div&gt;项目名称&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="450" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-230" value="BuildID&lt;div&gt;幢编号&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="450" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-231" value="BuildName&lt;div&gt;幢名&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="450" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-232" value="ProgressID&lt;div&gt;申报记录ID&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="450" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-233" value="Progress&lt;div&gt;进度值&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="450" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-234" value="ProgressRemark&lt;div&gt;进度说明&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="450" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-235" value="Effective&lt;div&gt;是否有效&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="450" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-236" value="SubmitTime&lt;div&gt;提交时间&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="450" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-237" value="SubmitUser&lt;div&gt;提交人&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="450" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-238" value="SubmitUserName&lt;div&gt;提交人姓名&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="450" y="763.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-239" value="ApprovalState&lt;div&gt;审批状态&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="450" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-240" value="Data_BuildInfo&lt;div&gt;幢扩展信息表，&lt;/div&gt;&lt;div&gt;幢基础属性信息&lt;/div&gt;&lt;div&gt;参照楼盘管理基础库&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="305" y="235" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-241" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="425" y="80" width="20" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-242" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="425" y="230" width="20" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-243" value="Data_BuildProgress&lt;div&gt;幢工程进度上报记录&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="300" y="585" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-244" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="420" y="360" width="20" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-245" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="280" y="119" width="20" height="501" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-246" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; 这个SQL查询用于获取项目信息 (`data_projectinfo`)、建筑信息 (`data_buildinfo`) 和建筑进度信息 (`data_buildprogress`) 的联合数据。&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;连接方式:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- 使用 `data_projectinfo.ProjectID` 和 `data_buildinfo.ProjectID` 连接 `data_projectinfo` 表和 `data_buildinfo` 表，以便关联每个建筑与其所属的项目。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- 使用 `data_buildinfo.BuildID` 和 `data_buildprogress.BuildID` 进行左连接 (`LEFT JOIN`)，以便将建筑进度信息关联到建筑信息。左连接确保即使没有建筑进度记录，也会显示建筑的基本信息。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-247">
+          <mxGeometry x="60" y="670" width="350" height="181.5" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-259" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="960" width="560" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-248" value="v_buyergroupinfo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-259">
+          <mxGeometry x="80" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-249" value="BID&lt;div&gt;购房信息注册ID&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-259">
+          <mxGeometry x="380" y="305" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-250" value="MemberName&lt;div&gt;购房人名称&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-259">
+          <mxGeometry x="380" y="375" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-251" value="CertNumber&lt;div&gt;证件号&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-259">
+          <mxGeometry x="380" y="445" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-252" value="PhoneNum&lt;div&gt;电话号码&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-259">
+          <mxGeometry x="380" y="515" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-253" value="Data_BuyerRegistInfo&lt;div&gt;购房人注册信息&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-259">
+          <mxGeometry x="230" y="305" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-254" value="Data_BuyerMember&lt;div&gt;购房家庭信息表&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-259">
+          <mxGeometry x="230" y="445" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-255" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 1. 表格和连接:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `data_buyerregistinfo`: 包含购买者注册信息，主要使用 `BID` 字段作为主键.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `data_buyermember`: 包含购买者的成员信息，通过 `BID` 字段与 `data_buyerregistinfo` 表关联.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 2. 连接方式:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- 使用 `data_buyermember.BID` 和 `data_buyerregistinfo.BID` 将 `data_buyermember` 表和 `data_buyerregistinfo` 表进行连接，以关联每个购买者的成员信息到其注册信息。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 3. 使用 `GROUP BY` 和 `GROUP_CONCAT`:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `GROUP BY data_buyerregistinfo.BID`: 使用购买者注册信息的 `BID` 字段进行分组，确保每个购买者只有一行结果.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `group_concat(data_buyermember.MemberName SEPARATOR &#39;,&#39;) AS MemberName`: 将同一购买者的所有成员姓名按逗号分隔组合成一个字符串，并使用 `MemberName` 别名.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `group_concat(data_buyermember.CertNumber SEPARATOR &#39;,&#39;) AS CertNumber`: 将同一购买者的所有成员证件号按逗号分隔组合成一个字符串，并使用 `CertNumber` 别名.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `group_concat(data_buyermember.PhoneNum SEPARATOR &#39;,&#39;) AS PhoneNum`: 将同一购买者的所有成员电话号码按逗号分隔组合成一个字符串，并使用 `PhoneNum` 别名.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-259">
+          <mxGeometry x="40" y="25" width="480" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-256" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-259">
+          <mxGeometry x="350" y="405" width="20" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-257" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="99tiGJLgSlBT4EcU3DEi-259" source="99tiGJLgSlBT4EcU3DEi-253" target="99tiGJLgSlBT4EcU3DEi-249">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="125" as="sourcePoint" />
+            <mxPoint x="390" y="75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-258" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-259">
+          <mxGeometry x="200" y="335" width="20" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-268" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="-1120" y="2080" width="630" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-260" value="v_buyermembername" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-268">
+          <mxGeometry x="125" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-261" value="BID&lt;div&gt;购房信息注册ID&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-268">
+          <mxGeometry x="435" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-262" value="Data_BuyerMember&lt;div&gt;购房家庭信息表&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-268">
+          <mxGeometry x="285" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-263" value="MemberName&lt;div&gt;购房人名称&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-268">
+          <mxGeometry x="435" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-264" value="CertNumber&lt;div&gt;证件号&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-268">
+          <mxGeometry x="435" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-265" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-268">
+          <mxGeometry x="405" y="310" width="20" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-266" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="99tiGJLgSlBT4EcU3DEi-268" source="99tiGJLgSlBT4EcU3DEi-260" target="99tiGJLgSlBT4EcU3DEi-262">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="245" y="500" as="sourcePoint" />
+            <mxPoint x="295" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-267" value="&lt;div style=&quot;text-align: justify;&quot;&gt;这个SQL查询用于从 `data_buyermember` 表中检索购买者的成员信息，并按购买者的 `BID` 进行分组。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 1. 表格和连接:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `data_buyermember`: 包含购买者的成员信息，主要使用 `BID` 字段作为关联.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 2. 使用 `GROUP BY` 和 `GROUP_CONCAT`:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `GROUP BY data_buyermember.BID`: 使用购买者的 `BID` 字段进行分组，确保每个购买者只有一行结果.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `ifnull(group_concat(data_buyermember.MemberName SEPARATOR &#39;,&#39;), &#39;&#39;) AS MemberName`: 使用 `GROUP_CONCAT` 函数将同一购买者的所有成员姓名按逗号分隔组合成一个字符串，并使用 `MemberName` 别名。`IFNULL` 函数确保如果没有成员姓名时返回空字符串而不是 `NULL`.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `ifnull(group_concat(data_buyermember.CertNumber SEPARATOR &#39;,&#39;), &#39;&#39;) AS CertNumber`: 使用 `GROUP_CONCAT` 函数将同一购买者的所有成员证件号按逗号分隔组合成一个字符串，并使用 `CertNumber` 别名。`IFNULL` 函数确保如果没有证件号时返回空字符串而不是 `NULL`.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;这个查询将返回每个购买者的 `BID` 及其成员的姓名和证件号码，成员信息用逗号分隔在同一行展示。如果某个购买者没有任何成员信息，则会返回空字符串而不是 `NULL`。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-268">
+          <mxGeometry x="25" y="50" width="580" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-293" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="-420" y="2080" width="780" height="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-269" value="BankAccountID&lt;div&gt;监管账号id&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="450" y="433" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-270" value="v_checkaccountstatisticsdeposite" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="50" y="715" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-271" value="TotalCount" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="600" y="503" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-272" value="TotalAmount" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="600" y="571" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-273" value="CheckCount" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="600" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-274" value="NoCheckCount" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="600" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-275" value="CheckAmount" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="600" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-276" value="NoCheckAmount" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="600" y="850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-277" value="NoCheckCountWarning" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="600" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-278" value="LastCheckTime" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="600" y="993" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-279" value="&lt;div style=&quot;text-align: justify;&quot;&gt;这个 SQL 查询的功能是从 `data_funddepositrecords` 表中按 `BankAccountID` 分组统计不同指标的汇总信息。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;1. `SELECT`&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `data_funddepositrecords`.`BankAccountID` AS `BankAccountID`: 选择银行账户ID，并将其重命名为 `BankAccountID`。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `COUNT(`data_funddepositrecords`.`BankAccountID`) AS `TotalCount`:` 统计每个 `BankAccountID` 的记录总数，并将结果命名为 `TotalCount`。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `SUM(`data_funddepositrecords`.`Amount`) AS `TotalAmount`: 计算每个 `BankAccountID` 的金额总和，并将结果命名为 `TotalAmount`。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `COUNT(IF((`data_funddepositrecords`.`IsCheck` = 1), 1, NULL)) AS `CheckCount`: 计算已审核 (`IsCheck = 1`) 的记录数，并将结果命名为 `CheckCount`。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `COUNT(IF((`data_funddepositrecords`.`IsCheck` = 0), 1, NULL)) AS `NoCheckCount`: 计算未审核 (`IsCheck = 0`) 的记录数，并将结果命名为 `NoCheckCount`。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `SUM(IF((`data_funddepositrecords`.`IsCheck` = 1), `data_funddepositrecords`.`Amount`, 0)) AS `CheckAmount`: 计算已审核记录的金额总和，并将结果命名为 `CheckAmount`。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `SUM(IF((`data_funddepositrecords`.`IsCheck` = 0), `data_funddepositrecords`.`Amount`, 0)) AS `NoCheckAmount`: 计算未审核记录的金额总和，并将结果命名为 `NoCheckAmount`。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `COUNT(IF(((`data_funddepositrecords`.`IsCheck` = 0) AND ((TO_DAYS(CURDATE()) - TO_DAYS(`data_funddepositrecords`.`PaymentTime`)) &amp;gt;= 3)), 1, NULL)) AS `NoCheckCountWarning`: 计算未审核超时（超过3天未审核）的记录数，并将结果命名为 `NoCheckCountWarning`。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `SUM(IF(((`data_funddepositrecords`.`IsCheck` = 0) AND ((TO_DAYS(CURDATE()) - TO_DAYS(`data_funddepositrecords`.`PaymentTime`)) &amp;gt;= 3)), `data_funddepositrecords`.`Amount`, 0)) AS `NoCheckAmountWarning`: 计算未审核超时的金额总和，并将结果命名为 `NoCheckAmountWarning`。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- `MAX(IF((`data_funddepositrecords`.`IsCheck` = 1), `data_funddepositrecords`.`CheckTime`, NULL)) AS `LastCheckTime`: 获取每个 `BankAccountID` 最后一次审核的时间，并将结果命名为 `LastCheckTime`。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;2. `FROM` `data_funddepositrecords`: 指定查询的数据来源是 `data_funddepositrecords` 表。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;3. `GROUP BY `data_funddepositrecords`.`BankAccountID``: 根据 `BankAccountID` 字段进行分组，确保每个汇总指标都是按照不同的银行账户ID计算的。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="50" y="30" width="670" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-280" value="Data_FundDepositRecords&lt;div&gt;资金缴存操作记录&lt;/div&gt;&lt;div&gt;（数据来源：银行通信数据包&lt;/div&gt;&lt;div&gt;或是银行端操作记录）&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="265" y="715" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-281" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="425" y="460" width="20" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-282" value="BankAccountID&lt;div&gt;监管账号id&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="450" y="503" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-283" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="99tiGJLgSlBT4EcU3DEi-293" source="99tiGJLgSlBT4EcU3DEi-282" target="99tiGJLgSlBT4EcU3DEi-271">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="720" as="sourcePoint" />
+            <mxPoint x="720" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-284" value="Amount&lt;div&gt;交款金额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="450" y="571" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-285" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="99tiGJLgSlBT4EcU3DEi-293" source="99tiGJLgSlBT4EcU3DEi-284" target="99tiGJLgSlBT4EcU3DEi-272">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="800" as="sourcePoint" />
+            <mxPoint x="720" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-286" value="IsCheck&lt;div&gt;是否对账&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="450" y="745" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-287" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="570" y="670" width="20" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-288" value="PaymentTime&lt;div&gt;付款时间&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="450" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-289" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="99tiGJLgSlBT4EcU3DEi-293" source="99tiGJLgSlBT4EcU3DEi-288" target="99tiGJLgSlBT4EcU3DEi-277">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="800" as="sourcePoint" />
+            <mxPoint x="720" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-290" value="CheckTime&lt;div&gt;对账时间&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-293">
+          <mxGeometry x="450" y="993" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-291" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="99tiGJLgSlBT4EcU3DEi-293" source="99tiGJLgSlBT4EcU3DEi-290" target="99tiGJLgSlBT4EcU3DEi-278">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="940" as="sourcePoint" />
+            <mxPoint x="720" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-292" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="99tiGJLgSlBT4EcU3DEi-293" source="99tiGJLgSlBT4EcU3DEi-270" target="99tiGJLgSlBT4EcU3DEi-280">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="620" as="sourcePoint" />
+            <mxPoint x="170" y="570" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
