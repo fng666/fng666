@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-15T04:57:35.485Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.259.400 QQBrowser/12.6.5709.400" etag="2NssLBMKH3yixtRIoyU3" version="24.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-15T05:15:52.197Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.259.400 QQBrowser/12.6.5709.400" etag="qcPYi997NV-jb7fCk-ES" version="24.6.5" type="github">
   <diagram name="第 1 页" id="-xguryHVdIeM40GGmxYT">
-    <mxGraphModel dx="3885" dy="2573" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3012" dy="2024" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -383,7 +383,7 @@
           <mxGeometry x="228" y="56" width="20" height="620" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-190" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
-          <mxGeometry x="-1110" y="970" width="600" height="920" as="geometry" />
+          <mxGeometry x="-1120" y="970" width="600" height="920" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-171" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 这个SQL查询从两个表中选择数据：`data_contractbasementmoneyrecords` 和 `data_contractbasementmoney`。它通过以下方式将它们连接起来：&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 1. `data_contractbasementmoneyrecords` 和 `data_contractbasementmoney` 表通过 `FMID` 字段进行内连接。这样可以将基础款项记录 (`data_contractbasementmoneyrecords`) 和基础款项 (`data_contractbasementmoney`) 关联起来，其中 `FMID` 在 `data_contractbasementmoneyrecords` 表中是一个外键，关联到 `FMID` 字段上。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-190">
           <mxGeometry x="110" y="60" width="290" height="180" as="geometry" />
@@ -441,6 +441,48 @@
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-189" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-190">
           <mxGeometry x="150" y="290" width="20" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-204" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="-435" y="970" width="590" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-191" value="v_buildgroupinfo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
+          <mxGeometry x="75" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-192" value="ProjectID&lt;div&gt;项目编号&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
+          <mxGeometry x="375" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-193" value="BuildID&lt;div&gt;幢编号&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
+          <mxGeometry x="375" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-194" value="BuildName&lt;div&gt;幢名&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
+          <mxGeometry x="375" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-195" value="HouseCount&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
+          <mxGeometry x="375" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-196" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; 1. 涉及的表格：这个查询涉及两个表格：&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; `data_houseinfo`：包含房屋的信息。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; `data_buildinfo`：包含建筑物的信息。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 2. 连接：使用 `BuildID` 字段将 `data_houseinfo` 和 `data_buildinfo` 表格连接起来。这样可以将每个房屋与其对应的建筑物关联起来。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 3. ：&lt;span style=&quot;background-color: initial;&quot;&gt;`count(data_houseinfo.HouseID) AS HouseCount`：统计在 `data_houseinfo` 表格中，与 `data_buildinfo` 中的每个 `BuildID` 相匹配的房屋数。这个统计结果用 `HouseCount` 作为别名。&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
+          <mxGeometry x="60" y="80" width="450" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-198" value="Data_BuildInfo&lt;div&gt;幢扩展信息表，&lt;/div&gt;&lt;div&gt;幢基础属性信息参照&lt;/div&gt;&lt;div&gt;楼盘管理基础库&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
+          <mxGeometry x="225" y="285" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-199" value="Data_HouseInfo&lt;div&gt;房屋扩展信息表，&lt;/div&gt;&lt;div&gt;房屋基础属性信息&lt;/div&gt;&lt;div&gt;参照楼盘管理基础库&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
+          <mxGeometry x="225" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-200" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
+          <mxGeometry x="345" y="240" width="20" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-202" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="99tiGJLgSlBT4EcU3DEi-204" source="99tiGJLgSlBT4EcU3DEi-199" target="99tiGJLgSlBT4EcU3DEi-195">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="485" y="480" as="sourcePoint" />
+            <mxPoint x="535" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-203" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-204">
+          <mxGeometry x="195" y="310" width="20" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-205" value="v_buildinfo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1130" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
