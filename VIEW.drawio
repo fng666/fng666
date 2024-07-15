@@ -1,9 +1,60 @@
-<mxfile host="app.diagrams.net" modified="2024-07-15T01:09:48.586Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.259.400 QQBrowser/12.6.5709.400" version="24.6.5" etag="xMBQiqUK2YnTVY6DEtGV" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-15T01:37:45.404Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.259.400 QQBrowser/12.6.5709.400" etag="1Dg8qjZ8KmTWE94MKmX1" version="24.6.5" type="github">
   <diagram name="第 1 页" id="-xguryHVdIeM40GGmxYT">
-    <mxGraphModel>
+    <mxGraphModel dx="1904" dy="1847" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-1" value="v_allcontractinfo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-2" value="ContractID&lt;div&gt;合同编码，主键&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-3" value="Buyer&lt;div&gt;购房人姓名&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-4" value="ContractType&lt;div&gt;合同类型&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-5" value="PaymentMethod&lt;div&gt;付款方式&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-6" value="BuyerCard&lt;div&gt;购房人证件号&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-7" value="TemplateCode&lt;div&gt;合同模板编号&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-8" value="OverdueLock&lt;div&gt;是否超过备案&lt;/div&gt;&lt;div&gt;时间被锁定&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-9" value="ContractArea&lt;div&gt;合同面积&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-11" value="ContractPrice&lt;div&gt;合同成交价格&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="384.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-12" value="DownPayment&lt;div&gt;首付款/分期首付额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-13" value="LoanPrice&lt;div&gt;贷款总额度&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-14" value="CommerciaLoanPrice&lt;div&gt;商贷金额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-15" value="ProvidentFundLoanPrice&lt;div&gt;公积金贷款金额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-16" value="OtherLoanPrice&lt;div&gt;其他贷款额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-17" value="IsDelete&lt;div&gt;是否删除&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-18" value="data_contractinfo&lt;div&gt;商品房买卖合同&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
