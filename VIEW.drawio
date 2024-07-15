@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-15T02:55:16.521Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.259.400 QQBrowser/12.6.5709.400" etag="FwGoO1OnIcbE7gQ2BYSH" version="24.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-15T03:12:27.199Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.259.400 QQBrowser/12.6.5709.400" etag="OsZETC9fpzpjUiSz3K8V" version="24.6.5" type="github">
   <diagram name="第 1 页" id="-xguryHVdIeM40GGmxYT">
-    <mxGraphModel dx="9464" dy="6084" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3737" dy="2480" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -152,7 +152,7 @@
           <mxGeometry x="220" y="401.5" width="20" height="543" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-116" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
-          <mxGeometry x="210" y="-370" width="770" height="1040" as="geometry" />
+          <mxGeometry x="210" y="-370" width="740" height="1040" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-94" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 这个SQL查询从三个表中选择数据：data_appendageconfig、data_appendageconfigdetails 和 data_appendageitems。它通过以下方式将它们连接起来：&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; data_appendageconfig 和 data_appendageconfigdetails 表通过 ConfigID 字段进行左连接。这意味着即使在 data_appendageconfig 中找不到与 data_appendageconfigdetails 匹配的记录，也会包含 data_appendageconfig 中的数据。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; data_appendageconfigdetails 和 data_appendageitems 表通过 ItemCode 字段连接。这样可以将附属配置的详细信息与附属项的具体信息关联起来。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
           <mxGeometry x="30" y="145" width="330" height="170" as="geometry" />
@@ -304,8 +304,86 @@
         <mxCell id="99tiGJLgSlBT4EcU3DEi-142" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
           <mxGeometry x="199.5" y="508" width="20" height="620" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-144" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1660" y="50" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-170" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="1630" y="-370" width="560" height="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-144" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 这个SQL查询从三个表中选择数据：`data_bankaccount`、`data_bankinfo` 和 `data_companyinfo`。它通过以下方式将它们连接起来：&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 1. `data_bankaccount` 和 `data_bankinfo` 表通过 `BankID` 字段进行内连接。这样可以将银行账户信息 (`data_bankaccount`) 和银行信息 (`data_bankinfo`) 关联起来，其中 `BankID` 在 `data_bankaccount` 表中是一个外键，关联到 `BankCode` 字段上。&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 2. 上述连接的结果再与 `data_companyinfo` 表通过 `DevID` 字段进行内连接。这样可以将开发者ID (`DevID`) 对应的公司信息 (`data_companyinfo`) 关联到前面连接的结果中，其中 `DevID` 也是 `data_bankaccount` 表中的外键，关联到 `CompanyID` 字段上。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="36" y="806" width="330" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-145" value="v_bankaccountinfo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="108" y="336" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-146" value="CompanyName&lt;div&gt;企业名称&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="408" y="36" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-147" value="BankName&lt;div&gt;银行名称&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="408" y="106" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-149" value="AccountID&lt;div&gt;监管账号id&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="408" y="246" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-151" value="BankClass&lt;div&gt;银行类型&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="408" y="176" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-152" value="BankID&lt;div&gt;监管银行id&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="408" y="316" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-153" value="DevID&lt;div&gt;开发企业id&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="408" y="386" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-154" value="AccountNum&lt;div&gt;账号&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="408" y="456" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-155" value="AccountName&lt;div&gt;账号名&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="408" y="526" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-156" value="Possessor&lt;div&gt;账户持有人&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="408" y="596" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-157" value="Principal&lt;div&gt;账户本金&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="408" y="666" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-158" value="Interest&lt;div&gt;账户利息&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="408" y="736" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-159" value="LastSynTime&lt;div&gt;最后一次与&lt;/div&gt;&lt;div&gt;银行同步时间&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="408" y="806" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-160" value="Enable&lt;div&gt;启用状态&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="408" y="876" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-161" value="ApprovalState&lt;div&gt;审核状态&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="408" y="946" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-162" value="IsDelete&lt;div&gt;删除标记&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="408" y="1016" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-163" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="378" y="276" width="20" height="780" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-164" value="Data_CompanyInfo&lt;div&gt;从业主体--企业信息表&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="258" y="36" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-165" value="Data_BankInfo&lt;div&gt;监管银行信息表&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="258" y="146" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-166" value="Data_BankAccount&lt;div&gt;监管账号信息表&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="258" y="636" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-167" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="378" y="126" width="20" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-168" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="99tiGJLgSlBT4EcU3DEi-170" source="99tiGJLgSlBT4EcU3DEi-164" target="99tiGJLgSlBT4EcU3DEi-146">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="338" y="536" as="sourcePoint" />
+            <mxPoint x="388" y="486" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-169" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-170">
+          <mxGeometry x="228" y="56" width="20" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-171" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2510" y="-260" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
