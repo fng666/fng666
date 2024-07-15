@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-15T03:26:34.965Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.259.400 QQBrowser/12.6.5709.400" etag="mpP1Op_zCfyHBt5YnNaZ" version="24.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-15T03:29:01.712Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.259.400 QQBrowser/12.6.5709.400" etag="iI_TtyxcvWU8lQLSbDg0" version="24.6.5" type="github">
   <diagram name="第 1 页" id="-xguryHVdIeM40GGmxYT">
     <mxGraphModel dx="9464" dy="6084" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -383,7 +383,7 @@
           <mxGeometry x="228" y="56" width="20" height="620" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-190" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
-          <mxGeometry x="2250" y="-370" width="600" height="920" as="geometry" />
+          <mxGeometry x="-1110" y="970" width="600" height="920" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-171" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 这个SQL查询从两个表中选择数据：`data_contractbasementmoneyrecords` 和 `data_contractbasementmoney`。它通过以下方式将它们连接起来：&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 1. `data_contractbasementmoneyrecords` 和 `data_contractbasementmoney` 表通过 `FMID` 字段进行内连接。这样可以将基础款项记录 (`data_contractbasementmoneyrecords`) 和基础款项 (`data_contractbasementmoney`) 关联起来，其中 `FMID` 在 `data_contractbasementmoneyrecords` 表中是一个外键，关联到 `FMID` 字段上。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-190">
           <mxGeometry x="110" y="60" width="290" height="180" as="geometry" />
