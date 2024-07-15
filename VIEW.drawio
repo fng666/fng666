@@ -1,77 +1,311 @@
-<mxfile host="app.diagrams.net" modified="2024-07-15T01:48:05.242Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.259.400 QQBrowser/12.6.5709.400" etag="tY4qgieCnIbUjtAR4F0I" version="24.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-15T02:55:16.521Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.259.400 QQBrowser/12.6.5709.400" etag="FwGoO1OnIcbE7gQ2BYSH" version="24.6.5" type="github">
   <diagram name="第 1 页" id="-xguryHVdIeM40GGmxYT">
-    <mxGraphModel dx="2389" dy="2152" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="9464" dy="6084" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-1" value="v_allcontractinfo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-110" y="620" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-34" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="-1120" y="-380" width="600" height="1200" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-2" value="ContractID&lt;div&gt;合同编码，主键&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="-170" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-1" value="v_allcontractinfo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="50" y="810" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-3" value="Buyer&lt;div&gt;购房人姓名&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="-97" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-2" value="ContractID&lt;div&gt;合同编码&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="350" y="20" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-4" value="ContractType&lt;div&gt;合同类型&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="121" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-3" value="Buyer&lt;div&gt;购房人姓名&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="350" y="93" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-5" value="PaymentMethod&lt;div&gt;付款方式&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="48" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-4" value="ContractType&lt;div&gt;合同类型&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="350" y="311" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-6" value="BuyerCard&lt;div&gt;购房人证件号&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="-25" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-5" value="PaymentMethod&lt;div&gt;付款方式&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="350" y="238" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-7" value="TemplateCode&lt;div&gt;合同模板编号&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="193" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-6" value="BuyerCard&lt;div&gt;购房人证件号&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="350" y="165" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-8" value="OverdueLock&lt;div&gt;是否超过备案&lt;/div&gt;&lt;div&gt;时间被锁定&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="266" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-7" value="TemplateCode&lt;div&gt;合同模板编号&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="350" y="383" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-9" value="ContractArea&lt;div&gt;合同面积&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="339" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-8" value="OverdueLock&lt;div&gt;是否超过备案&lt;/div&gt;&lt;div&gt;时间被锁定&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="350" y="456" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-11" value="ContractPrice&lt;div&gt;合同成交价格&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="411" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-9" value="ContractArea&lt;div&gt;合同面积&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="350" y="529" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-12" value="DownPayment&lt;div&gt;首付款/分期首付额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="484" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-11" value="ContractPrice&lt;div&gt;合同成交价格&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="350" y="601" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-13" value="LoanPrice&lt;div&gt;贷款总额度&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="557" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-12" value="DownPayment&lt;div&gt;首付款/分期首付额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="350" y="674" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-14" value="CommerciaLoanPrice&lt;div&gt;商贷金额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="629" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-13" value="LoanPrice&lt;div&gt;贷款总额度&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="350" y="747" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-15" value="ProvidentFundLoanPrice&lt;div&gt;公积金贷款金额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="702" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-14" value="CommerciaLoanPrice&lt;div&gt;商贷金额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="350" y="819" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-16" value="OtherLoanPrice&lt;div&gt;其他贷款额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="775" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-15" value="ProvidentFundLoanPrice&lt;div&gt;公积金贷款金额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="350" y="892" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-17" value="IsDelete&lt;div&gt;是否删除&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="847" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-16" value="OtherLoanPrice&lt;div&gt;其他贷款额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="350" y="965" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-18" value="data_contractinfo&lt;div&gt;商品房买卖合同&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="340" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-17" value="IsDelete&lt;div&gt;是否删除&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="350" y="1037" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-19" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;size=0.5;" vertex="1" parent="1">
-          <mxGeometry x="160" y="-140" width="20" height="1020" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-18" value="data_contractinfo&lt;div&gt;商品房买卖合同&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="200" y="530" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-28" value="data_contractinfobackup&lt;div&gt;商品房买卖合同备份&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="920" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-19" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;size=0.5;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="320" y="50" width="20" height="1020" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-29" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;size=0.5;" vertex="1" parent="1">
-          <mxGeometry x="10" y="370" width="20" height="580" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-28" value="data_contractinfobackup&lt;div&gt;商品房买卖合同备份&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="200" y="1110" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="99tiGJLgSlBT4EcU3DEi-28" target="99tiGJLgSlBT4EcU3DEi-32">
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-29" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;size=0.5;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="170" y="560" width="20" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="99tiGJLgSlBT4EcU3DEi-34" source="99tiGJLgSlBT4EcU3DEi-28" target="99tiGJLgSlBT4EcU3DEi-32">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="90" y="920" as="sourcePoint" />
-            <mxPoint x="180" y="950" as="targetPoint" />
+            <mxPoint x="250" y="1110" as="sourcePoint" />
+            <mxPoint x="340" y="1140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="99tiGJLgSlBT4EcU3DEi-32" value="同data_contractinfo（IsDelete=1）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="920" width="120" height="60" as="geometry" />
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-32" value="同data_contractinfo（IsDelete=1）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="350" y="1110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-82" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 这个SQL查询使用了 UNION 操作符，从两个不同的表 data_contractinfo 和 data_contractinfobackup 中选择数据，并合并它们的结果集。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 第一个 SELECT 语句从 data_contractinfo 表 (c1) 中选择数据，包括各种合同信息字段，并且 IsDelete 字段是从 c1 表中获取的，表明合同是否已被删除。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 第二个 SELECT 语句从 data_contractinfobackup 表 (c2) 中选择数据，同样选择了与合同相关的各种字段，但 IsDelete 字段被硬编码为 1，表示这些备份记录都是已删除的合同备份。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 通过使用 UNION 操作符，这两个查询结果将合并成一个结果集，其中包含所有符合条件的合同信息，UNION 操作符会自动去重结果集。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-34">
+          <mxGeometry x="20" y="70" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-92" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="-420" y="-330" width="560" height="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-58" value="v_appendageconfig" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="100" y="643" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-59" value="ConfigID&lt;div&gt;配置ID&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="393" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-60" value="ConfigName&lt;div&gt;配置名称&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="393" y="124" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-61" value="ProjectID&lt;div&gt;项目ID&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="393" y="198" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-62" value="Cost&lt;div&gt;配套费成本核算&lt;/div&gt;&lt;div&gt;总金额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="393" y="273" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-63" value="UsedAmount&lt;div&gt;已经支取的配套费用&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="393" y="347" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-64" value="CostCalcTime&lt;div&gt;最后一次重新&lt;/div&gt;&lt;div&gt;计算成本的时间&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="393" y="421" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-65" value="ApprovalState&lt;div&gt;审核状态&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="393" y="495" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-66" value="CreateTime&lt;div&gt;创建时间&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="393" y="569" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-68" value="CreateUser&lt;div&gt;创建人ID&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="393" y="643" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-69" value="CreateUserName&lt;div&gt;创建人姓名&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="393" y="718" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-70" value="ProjectName&lt;div&gt;项目名称&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="393" y="792" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-71" value="CompanyName&lt;div&gt;企业名称&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="393" y="866" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-72" value="CompanyID&lt;div&gt;企业编码&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="393" y="940" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-83" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 这个SQL查询从三个表中选择数据：data_appendageconfig、data_projectinfo 和 data_companyinfo。它通过以下关联条件将这些表连接起来：&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; data_appendageconfig 和 data_projectinfo 表通过 ProjectID 字段进行连接。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; data_projectinfo 和 data_companyinfo 表通过 DevID 字段连接。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="40" y="124" width="250" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-84" value="Data_AppendageConfig&lt;div&gt;配套费明细配置&lt;/div&gt;&lt;div&gt;（针对具体项目的）&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="243" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-85" value="Data_ProjectInfo&lt;div&gt;项目基本信息表&lt;/div&gt;&lt;div&gt;（分期）&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="243" y="792" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-86" value="Data_CompanyInfo&lt;div&gt;从业主体--企业信息表&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="243" y="908" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-87" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="363" y="80" width="20" height="670" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-88" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;size=0.5;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="363" y="886" width="20" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-89" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="99tiGJLgSlBT4EcU3DEi-92" source="99tiGJLgSlBT4EcU3DEi-85" target="99tiGJLgSlBT4EcU3DEi-70">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="83" y="770" as="sourcePoint" />
+            <mxPoint x="133" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-93" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-92">
+          <mxGeometry x="220" y="401.5" width="20" height="543" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-116" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-370" width="770" height="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-94" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 这个SQL查询从三个表中选择数据：data_appendageconfig、data_appendageconfigdetails 和 data_appendageitems。它通过以下方式将它们连接起来：&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; data_appendageconfig 和 data_appendageconfigdetails 表通过 ConfigID 字段进行左连接。这意味着即使在 data_appendageconfig 中找不到与 data_appendageconfigdetails 匹配的记录，也会包含 data_appendageconfig 中的数据。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; data_appendageconfigdetails 和 data_appendageitems 表通过 ItemCode 字段连接。这样可以将附属配置的详细信息与附属项的具体信息关联起来。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="30" y="145" width="330" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-95" value="ProjectID&lt;div&gt;配置ID&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="590" y="57" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-96" value="ConfigName&lt;div&gt;配置名称&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="590" y="129" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-97" value="Cost&lt;div&gt;配套费成本核算&lt;/div&gt;&lt;div&gt;总金额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="590" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-98" value="ItemCode&lt;div&gt;套配设施&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="590" y="272" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-99" value="ContractAmount&lt;div&gt;施工合同金额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="590" y="344" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-100" value="Quantities&lt;div&gt;施工工程量&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="590" y="415" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-101" value="CostStandard&lt;div&gt;核算标准&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="590" y="487" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-102" value="CostAmount&lt;div&gt;成本金额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="590" y="559" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-103" value="PremiumReceived&lt;div&gt;缴纳金额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="590" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-104" value="AmountUsed&lt;div&gt;使用金额&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="590" y="702" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-105" value="AppendageCode&lt;div&gt;配套部分编号&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="590" y="774" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-106" value="AppendageName&lt;div&gt;配套部分名称&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="590" y="845" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-107" value="IsEnable&lt;div&gt;是否启用&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="590" y="917" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-108" value="Data_AppendageConfig&lt;div&gt;配套费明细配置&lt;/div&gt;&lt;div&gt;（针对具体项目的）&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="391" y="127" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-109" value="Data_AppendageItems&lt;div&gt;配套设施部位名称&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="391" y="847" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-110" value="Data_AppendageConfigDetails&lt;div&gt;项目配套设施&lt;/div&gt;&lt;div&gt;费用的明细&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="391" y="487" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-111" value="v_appendageconfigdetails" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="210" y="487" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-112" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="560" y="77" width="20" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-113" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="560" y="297" width="20" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-114" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="560" y="797" width="20" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-115" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-116">
+          <mxGeometry x="360" y="147" width="20" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-143" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="-370" width="530" height="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-117" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 这个SQL查询从三个表中选择数据：data_appointbuyer、data_companyinfo 和 data_projectinfo。它通过以下方式将它们连接起来：&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; data_appointbuyer 和 data_companyinfo 表通过 DevID 字段进行内连接。这样可以将开发者ID (DevID) 对应的公司信息 (data_companyinfo) 关联起来。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 上述连接的结果再与 data_projectinfo 表通过 ProjectID 字段进行内连接。这样可以将项目ID (ProjectID) 对应的项目信息 (data_projectinfo) 关联到前面连接的结果中。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="70" y="138" width="279" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-118" value="v_appointbuyer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="79.5" y="788" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-119" value="Data_AppointBuyer&lt;div&gt;指定购房人记录信息&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="229.5" y="488" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-120" value="Data_CompanyInfo&lt;div&gt;从业主体--企业信息表&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="229.5" y="1026" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-121" value="Data_ProjectInfo&lt;div&gt;项目基本信息表&lt;/div&gt;&lt;div&gt;（分期）&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="229.5" y="1098" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-122" value="RecordID&lt;div&gt;记录ID&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;flipH=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="379.5" y="18" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-123" value="Reason&lt;div&gt;指定原因说明&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;flipH=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="379.5" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-124" value="DevID&lt;div&gt;开发商ID&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;flipH=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="379.5" y="162" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-125" value="ProjectID&lt;div&gt;项目ID&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;flipH=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="379.5" y="234" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-126" value="BID&lt;div&gt;指定的购房人&lt;/div&gt;&lt;div&gt;的注册ID&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;flipH=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="379.5" y="306" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-127" value="ExtantContractID&lt;div&gt;如果指定的房屋&lt;/div&gt;&lt;div&gt;已经签约的话&lt;/div&gt;&lt;div&gt;保存现有合同号&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;flipH=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="379.5" y="378" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-128" value="Extract&lt;div&gt;是否将指定购房人&lt;/div&gt;&lt;div&gt;提取到该开发商名下&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;flipH=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="379.5" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-129" value="IsCompleted&lt;div&gt;是否完成&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;flipH=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="379.5" y="522" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-130" value="CompletedTime&lt;div&gt;完成时间&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;flipH=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="379.5" y="594" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-131" value="CompletedContractID&lt;div&gt;签约完成的合同号&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;flipH=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="379.5" y="666" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-132" value="ApplyState&lt;div&gt;审批状态&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;flipH=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="379.5" y="738" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-133" value="SubmitDate&lt;div&gt;操作时间&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;flipH=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="379.5" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-134" value="SubmitMan&lt;div&gt;操作人&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;flipH=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="379.5" y="882" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-135" value="&lt;div&gt;CompanyName&lt;div&gt;企业名称&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;flipH=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="379.5" y="1026" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-136" value="RevokeType&lt;div&gt;是否在撤销合同时&lt;/div&gt;&lt;div&gt;退款(0001退款，&lt;/div&gt;&lt;div&gt;0002不退款)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;flipH=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="379.5" y="954" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-137" value="ProjectName&lt;div&gt;项目名称&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;flipH=1;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="379.5" y="1098" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-138" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="349.5" y="48" width="20" height="940" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-140" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="99tiGJLgSlBT4EcU3DEi-143" source="99tiGJLgSlBT4EcU3DEi-120" target="99tiGJLgSlBT4EcU3DEi-135">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="219.5" y="1038" as="sourcePoint" />
+            <mxPoint x="269.5" y="988" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-141" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="99tiGJLgSlBT4EcU3DEi-143" source="99tiGJLgSlBT4EcU3DEi-121" target="99tiGJLgSlBT4EcU3DEi-137">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="219.5" y="1038" as="sourcePoint" />
+            <mxPoint x="269.5" y="988" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-142" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="99tiGJLgSlBT4EcU3DEi-143">
+          <mxGeometry x="199.5" y="508" width="20" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="99tiGJLgSlBT4EcU3DEi-144" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1660" y="50" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
