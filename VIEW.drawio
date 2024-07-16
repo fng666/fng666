@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-16T01:00:49.895Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.259.400 QQBrowser/12.6.5709.400" etag="kxrsZsmHif8gVUkC4g8W" version="24.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-16T01:01:55.424Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.259.400 QQBrowser/12.6.5709.400" etag="kVUI7zgrX1_1jCWWVzeZ" version="24.6.5" type="github">
   <diagram name="第 1 页" id="-xguryHVdIeM40GGmxYT">
-    <mxGraphModel dx="17274" dy="10999" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="6861" dy="4446" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -659,7 +659,7 @@
           <mxGeometry x="200" y="335" width="20" height="150" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-268" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
-          <mxGeometry x="-1280" y="2070" width="630" height="530" as="geometry" />
+          <mxGeometry x="-1280" y="2000" width="630" height="530" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-260" value="v_buyermembername" style="rounded=0;whiteSpace=wrap;html=1;" parent="99tiGJLgSlBT4EcU3DEi-268" vertex="1">
           <mxGeometry x="125" y="350" width="120" height="60" as="geometry" />
@@ -689,7 +689,7 @@
           <mxGeometry x="25" y="50" width="580" height="210" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-293" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
-          <mxGeometry x="-420" y="2080" width="780" height="1170" as="geometry" />
+          <mxGeometry x="-420" y="2010" width="780" height="1170" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-269" value="BankAccountID&lt;div&gt;监管账号id&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="99tiGJLgSlBT4EcU3DEi-293" vertex="1">
           <mxGeometry x="450" y="433" width="120" height="60" as="geometry" />
@@ -791,7 +791,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-329" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
-          <mxGeometry x="440" y="2080" width="850" height="1160" as="geometry" />
+          <mxGeometry x="440" y="2010" width="850" height="1160" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-296" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;div&gt;这段 SQL 查询的目的是从 `data_contractrefundrecords` 表中按 `BankAccountID` 分组统计不同指标的汇总信息。&lt;/div&gt;&lt;div&gt;1. `SELECT` 子句：&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `data_contractrefundrecords`.`BankAccountID` AS `BankAccountID`: 选择 `data_contractrefundrecords` 表中的 `BankAccountID` 字段，并将其重命名为 `BankAccountID`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `COUNT(`data_contractrefundrecords`.`BankAccountID`) AS `TotalCount`：计算每个 `BankAccountID` 的记录总数，并将结果命名为 `TotalCount`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `SUM(`data_contractrefundrecords`.`Amount`) AS `TotalAmount`：计算每个 `BankAccountID` 的金额总和，并将结果命名为 `TotalAmount`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `COUNT(IF((`data_contractrefundrecords`.`IsCheck` = 1), 1, NULL)) AS `CheckCount`：统计已审核 (`IsCheck = 1`) 的记录数，并将结果命名为 `CheckCount`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `COUNT(IF((`data_contractrefundrecords`.`IsCheck` = 0), 1, NULL)) AS `NoCheckCount`：统计未审核 (`IsCheck = 0`) 的记录数，并将结果命名为 `NoCheckCount`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `SUM(IF((`data_contractrefundrecords`.`IsCheck` = 1), `data_contractrefundrecords`.`Amount`, 0)) AS `CheckAmount`：计算已审核记录的金额总和，并将结果命名为 `CheckAmount`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `SUM(IF((`data_contractrefundrecords`.`IsCheck` = 0), `data_contractrefundrecords`.`Amount`, 0)) AS `NoCheckAmount`：计算未审核记录的金额总和，并将结果命名为 `NoCheckAmount`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `COUNT(IF(((`data_contractrefundrecords`.`IsCheck` = 0) AND ((TO_DAYS(CURDATE()) - TO_DAYS(`data_contractrefundrecords`.`RefundTime`)) &amp;gt;= 3)), 1, NULL)) AS `NoCheckCountWarning`：统计未审核且超时的记录数（超过3天未审核），并将结果命名为 `NoCheckCountWarning`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `SUM(IF(((`data_contractrefundrecords`.`IsCheck` = 0) AND ((TO_DAYS(CURDATE()) - TO_DAYS(`data_contractrefundrecords`.`RefundTime`)) &amp;gt;= 3)), `data_contractrefundrecords`.`Amount`, 0)) AS `NoCheckAmountWarning`：计算未审核且超时记录的金额总和，并将结果命名为 `NoCheckAmountWarning`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `MAX(IF((`data_contractrefundrecords`.`IsCheck` = 1), `data_contractrefundrecords`.`CheckTime`, NULL)) AS `LastCheckTime`：获取每个 `BankAccountID` 最后一次审核的时间，并将结果命名为 `LastCheckTime`。&lt;/div&gt;&lt;div&gt;2. `FROM` 子句：&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `data_contractrefundrecords`：指定查询的数据来源是 `data_contractrefundrecords` 表。&lt;/div&gt;&lt;div&gt;3. `GROUP BY` 子句：&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `data_contractrefundrecords`.`BankAccountID`：根据 `BankAccountID` 字段进行分组，以便在每个银行账户ID级别上计算汇总信息。&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="99tiGJLgSlBT4EcU3DEi-329" vertex="1">
           <mxGeometry x="20" y="30" width="809" height="390" as="geometry" />
@@ -893,7 +893,7 @@
           <mxGeometry x="649.5" y="580" width="140.5" height="60" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-331" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
-          <mxGeometry x="1370" y="2080" width="850" height="1160" as="geometry" />
+          <mxGeometry x="1370" y="2010" width="850" height="1160" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-332" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;div&gt;1. `SELECT` 子句：&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `data_fundwithdrawalrecords`.`BankAccountID` AS `BankAccountID`：选择 `data_fundwithdrawalrecords` 表中的 `BankAccountID` 字段，并将其重命名为 `BankAccountID`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `COUNT(`data_fundwithdrawalrecords`.`BankAccountID`) AS `TotalCount`：计算每个 `BankAccountID` 的记录总数，并将结果命名为 `TotalCount`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `SUM(`data_fundwithdrawalrecords`.`Amount`) AS `TotalAmount`：计算每个 `BankAccountID` 的金额总和，并将结果命名为 `TotalAmount`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `COUNT(IF((`data_fundwithdrawalrecords`.`IsCheck` = 1), 1, NULL)) AS `CheckCount`：统计已审核 (`IsCheck = 1`) 的记录数，并将结果命名为 `CheckCount`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `COUNT(IF((`data_fundwithdrawalrecords`.`IsCheck` = 0), 1, NULL)) AS `NoCheckCount`：统计未审核 (`IsCheck = 0`) 的记录数，并将结果命名为 `NoCheckCount`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `SUM(IF((`data_fundwithdrawalrecords`.`IsCheck` = 1), `data_fundwithdrawalrecords`.`Amount`, 0)) AS `CheckAmount`：计算已审核记录的金额总和，并将结果命名为 `CheckAmount`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `SUM(IF((`data_fundwithdrawalrecords`.`IsCheck` = 0), `data_fundwithdrawalrecords`.`Amount`, 0)) AS `NoCheckAmount`：计算未审核记录的金额总和，并将结果命名为 `NoCheckAmount`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `COUNT(IF(((`data_fundwithdrawalrecords`.`IsCheck` = 0) AND ((TO_DAYS(CURDATE()) - TO_DAYS(`data_fundwithdrawalrecords`.`AppropriationsTime`)) &amp;gt;= 3)), 1, NULL)) AS `NoCheckCountWarning`：统计未审核且超时的记录数（超过3天未审核），并将结果命名为 `NoCheckCountWarning`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `SUM(IF(((`data_fundwithdrawalrecords`.`IsCheck` = 0) AND ((TO_DAYS(CURDATE()) - TO_DAYS(`data_fundwithdrawalrecords`.`AppropriationsTime`)) &amp;gt;= 3)), `data_fundwithdrawalrecords`.`Amount`, 0)) AS `NoCheckAmountWarning`：计算未审核且超时记录的金额总和，并将结果命名为 `NoCheckAmountWarning`。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `MAX(IF((`data_fundwithdrawalrecords`.`IsCheck` = 1), `data_fundwithdrawalrecords`.`CheckTime`, NULL)) AS `LastCheckTime`：获取每个 `BankAccountID` 最后一次审核的时间，并将结果命名为 `LastCheckTime`。&lt;/div&gt;&lt;div&gt;2. `FROM` 子句：&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `data_fundwithdrawalrecords`：指定查询的数据来源是 `data_fundwithdrawalrecords` 表。&lt;/div&gt;&lt;div&gt;3. `GROUP BY` 子句：&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- `data_fundwithdrawalrecords`.`BankAccountID`：根据 `BankAccountID` 字段进行分组，以便在每个银行账户ID级别上计算汇总信息。&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="99tiGJLgSlBT4EcU3DEi-331" vertex="1">
           <mxGeometry x="20" y="30" width="809" height="390" as="geometry" />
@@ -995,7 +995,7 @@
           <mxGeometry x="649.5" y="580" width="140.5" height="60" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-380" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
-          <mxGeometry x="2280" y="2080" width="700" height="1130" as="geometry" />
+          <mxGeometry x="2280" y="2010" width="700" height="1130" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-359" value="v_contractagentsignrecord" style="rounded=0;whiteSpace=wrap;html=1;" parent="99tiGJLgSlBT4EcU3DEi-380" vertex="1">
           <mxGeometry x="100" y="740" width="150" height="60" as="geometry" />
@@ -1061,7 +1061,7 @@
           <mxGeometry x="260" y="540" width="20" height="460" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-417" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
-          <mxGeometry x="-1280" y="3690" width="670" height="1650" as="geometry" />
+          <mxGeometry x="-1270" y="3280" width="670" height="1650" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-382" value="v_contractbasementmoneyrecords" style="rounded=0;whiteSpace=wrap;html=1;" parent="99tiGJLgSlBT4EcU3DEi-417" vertex="1">
           <mxGeometry x="57.5" y="503" width="190" height="60" as="geometry" />
@@ -1169,7 +1169,7 @@
           <mxGeometry x="247.5" y="43" width="20" height="980" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-460" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
-          <mxGeometry x="-420" y="3690" width="590" height="1960" as="geometry" />
+          <mxGeometry x="-410" y="3280" width="590" height="1960" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-418" value="v_contractbasemoney" style="rounded=0;whiteSpace=wrap;html=1;" parent="99tiGJLgSlBT4EcU3DEi-460" vertex="1">
           <mxGeometry x="80" y="960" width="120" height="60" as="geometry" />
@@ -1298,7 +1298,7 @@
           <mxGeometry x="50" y="470" width="340" height="255" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-491" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
-          <mxGeometry x="440" y="3690" width="520" height="1310" as="geometry" />
+          <mxGeometry x="450" y="3280" width="520" height="1310" as="geometry" />
         </mxCell>
         <mxCell id="99tiGJLgSlBT4EcU3DEi-461" value="ApplyID&lt;div&gt;申请ID&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="99tiGJLgSlBT4EcU3DEi-491" vertex="1">
           <mxGeometry x="380" y="30" width="120" height="60" as="geometry" />
@@ -1394,7 +1394,7 @@
           <mxGeometry x="380" y="810" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4LTdq9vXxmk1Ge2Ho6Z6-45" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
-          <mxGeometry x="1370" y="3700" width="570" height="1940" as="geometry" />
+          <mxGeometry x="1380" y="3290" width="570" height="1940" as="geometry" />
         </mxCell>
         <mxCell id="4LTdq9vXxmk1Ge2Ho6Z6-2" value="v_contractdamagesmoney" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="4LTdq9vXxmk1Ge2Ho6Z6-45">
           <mxGeometry x="30" y="940" width="150" height="60" as="geometry" />
@@ -1523,7 +1523,7 @@
           <mxGeometry x="44" y="260" width="340" height="250" as="geometry" />
         </mxCell>
         <mxCell id="4LTdq9vXxmk1Ge2Ho6Z6-82" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
-          <mxGeometry x="2280" y="3700" width="670" height="1650" as="geometry" />
+          <mxGeometry x="2290" y="3290" width="670" height="1650" as="geometry" />
         </mxCell>
         <mxCell id="4LTdq9vXxmk1Ge2Ho6Z6-46" value="v_contractdamagesmoneyrecords" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="4LTdq9vXxmk1Ge2Ho6Z6-82">
           <mxGeometry x="40" y="522" width="190" height="60" as="geometry" />
