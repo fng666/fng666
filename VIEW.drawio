@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-16T01:01:55.424Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.259.400 QQBrowser/12.6.5709.400" etag="kVUI7zgrX1_1jCWWVzeZ" version="24.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-16T01:02:50.398Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.259.400 QQBrowser/12.6.5709.400" etag="X5cul3-KTGeg43Q56VLb" version="24.6.5" type="github" pages="2">
   <diagram name="第 1 页" id="-xguryHVdIeM40GGmxYT">
-    <mxGraphModel dx="6861" dy="4446" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="6807" dy="3677" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1630,6 +1630,14 @@
         <mxCell id="4LTdq9vXxmk1Ge2Ho6Z6-81" value="&lt;div style=&quot;text-align: justify;&quot;&gt;1. FROM 子句和连接方式:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 使用了 INNER JOIN 将 `data_contractdamagesmoneyrecords` 表和 `data_bankinfo` 表连接起来，连接条件是它们的 `BankCode` 字段相等。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 将 `data_contractdamagesmoneyrecords` 表和 `data_bankaccount` 表连接起来，连接条件是它们的 `BankAccountID` 字段相等。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; 将 `data_contractdamagesmoney` 表和 `data_contractdamagesmoneyrecords` 表连接起来，连接条件是它们的 `FMID` 字段相等。&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;2. 连接顺序:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp;- 这些连接是嵌套的，从内向外依次连接。先连接 `data_contractdamagesmoneyrecords` 和 `data_bankinfo`，然后连接 `data_bankaccount`，再连接 `data_contractdamagesmoney`。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="4LTdq9vXxmk1Ge2Ho6Z6-82">
           <mxGeometry x="40" y="1326" width="440" height="170" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="xp0hUsg4i-o1KKKOcxRF" name="第 2 页">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
